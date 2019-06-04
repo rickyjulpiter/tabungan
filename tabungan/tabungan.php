@@ -37,7 +37,7 @@
 																  siswa.nama,
 																  siswa.jenis_kelamin,
 																  siswa.kelas,
-																  siswa.telepon
+																  siswa.tempat
 																		
 																  from 
 																  siswa, tabungan

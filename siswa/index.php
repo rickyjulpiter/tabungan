@@ -16,11 +16,11 @@
 				<thead>
 					<tr>
 						<th>No</th>
-						<th>NIS</th>
+						<th>NIK</th>
 						<th>Nama</th>
 						<th>Kelas</th>
 						<th>Jenis Kelamin</th>
-						<th>Telepon</th>
+						<th>Tempat / Tanggal Lahir</th>
 						<th>Alamat</th>
 						<th>Opsi</th>
 					</tr>
@@ -42,7 +42,7 @@
 						<td><?php echo $row['nama']; ?></td>
 						<td><?php echo $row['kelas']; ?></td>
 						<td><?php echo $row['jenis_kelamin']; ?></td>
-						<td><?php echo $row['telepon']; ?></td>
+						<td><?php echo $row['tempat']; ?></td>
 						<td><?php echo $row['alamat']; ?></td>
 						<td>
 							<a href="edit_siswa-<?php echo $row['id_siswa']; ?>.html">Edit</a> |

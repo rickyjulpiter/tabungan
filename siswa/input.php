@@ -5,7 +5,7 @@ $nama = $_POST['nama'];
 $kelas = $_POST['kelas'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $alamat = $_POST['alamat'];
-$telepon = $_POST['telepon'];
+$tempat = $_POST['tempat'];
 
 $query = "insert INTO siswa SET
 								id_siswa = '$id_siswa',
@@ -13,7 +13,7 @@ $query = "insert INTO siswa SET
 								kelas = '$kelas',
 								jenis_kelamin = '$jenis_kelamin',
 								alamat = '$alamat',
-								telepon = '$telepon'
+								tempat = '$tempat'
 								";
 
 mysqli_query($koneksi, $query)

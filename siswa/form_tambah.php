@@ -4,7 +4,7 @@
 <br>
 <form role="form" method="post" action="input_siswa.html">
 	<div class="form-group">
-		<label>NIS</label>
+		<label>NIK</label>
 		<input class="form-control" name="id_siswa" autofocus>
 	</div>
 	<div class="form-group">
@@ -29,8 +29,8 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label>Telepon</label>
-		<input class="form-control" name="telepon">
+		<label>Tempat / Tanggal Lahir</label>
+		<input class="form-control" name="tempat">
 	</div>
 	<div class="form-group">
 		<label>Alamat</label>

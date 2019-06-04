@@ -5,14 +5,14 @@ $nama = $_POST['nama'];
 $kelas = $_POST['kelas'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $alamat = $_POST['alamat'];
-$telepon = $_POST['telepon'];
+$tempat = $_POST['tempat'];
 
 $query = "UPDATE siswa SET
 								nama = '$nama',
 								kelas = '$kelas',
 								jenis_kelamin = '$jenis_kelamin',
 								alamat = '$alamat',
-								telepon = '$telepon'
+								tempat = '$tempat'
 								WHERE id_siswa = '$id'
 								";
 

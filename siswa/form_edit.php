@@ -35,8 +35,8 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label>Telepon</label>
-		<input class="form-control" name="telepon"  value="<?php echo $row['telepon'] ; ?>">
+		<label>Tempat / Tanggal Lahir</label>
+		<input class="form-control" name="telepon"  value="<?php echo $row['tempat'] ; ?>">
 	</div>
 	<div class="form-group">
 		<label>Alamat</label>

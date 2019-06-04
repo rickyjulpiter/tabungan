@@ -23,10 +23,10 @@ $row = mysqli_fetch_array ($data);
 				</tr>
 				<tr>					
 					<td>
-						Telepon
+						Kelas
 					</td>
 					<td>
-						: <?php echo $row['telepon'] ; ?>
+						: <?php echo $row['kelas'] ; ?>
 					</td>
 				</tr>
 				<tr>		
