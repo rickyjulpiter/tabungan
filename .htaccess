@@ -1,0 +1,18 @@
+RewriteEngine on
+
+RewriteRule ^siswa\.html$ template.php?module=siswa&id=$1 [L]
+RewriteRule ^form_siswa\.html$ template.php?module=form_siswa&id=$1 [L]
+RewriteRule ^input_siswa\.html$ template.php?module=input_siswa&id=$1 [L]
+RewriteRule ^input\.php$ template.php?module=input&id=$1 [L]
+RewriteRule ^edit_siswa-(.*)\.html$ template.php?module=edit_siswa&id=$1 [L]
+RewriteRule ^update_siswa\.html$ template.php?module=update_siswa&id=$1 [L]
+RewriteRule ^hapus_siswa-(.*)\.html$ template.php?module=hapus_siswa&id=$1 [L]
+
+
+RewriteRule ^tabungan\.html$ template.php?module=tabungan&id=$1 [L]
+RewriteRule ^penarikan\.html$ template.php?module=penarikan&id=$1 [L]
+RewriteRule ^input_penarikan\.html$ template.php?module=input_penarikan&id=$1 [L]
+RewriteRule ^setoran\.html$ template.php?module=setoran&id=$1 [L]
+RewriteRule ^input_setoran\.html$ template.php?module=input_setoran&id=$1 [L]
+RewriteRule ^detail-(.*)\.html$ template.php?module=detail&id=$1 [L]
+Options All -Indexes
