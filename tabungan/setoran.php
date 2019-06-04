@@ -67,9 +67,10 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nama</th>
-                                        <th>Jenis Kelamin</th>
-                                        <th>Telepon</th>
-                                        <th>Alamat</th>
+                                        <th>Kelas</th>
+                                        <!--<th>Jenis Kelamin</th>
+                                        <th>Tempat</th>
+                                        <th>Alamat</th>-->
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -78,7 +79,7 @@
 											$data = mysqli_query ($koneksi, " select  *
 																					  from 
 																					  siswa
-																					  order by id_siswa DESC");
+																					  order by id_siswa ASC");
 											while ($row = mysqli_fetch_array ($data))
 											{
 										?>
@@ -90,14 +91,17 @@
 											<?php echo $row['nama']; ?>
 										</td>
 										<td>
+											<?php echo $row['kelas']; ?>
+										</td>
+										<!--<td>
 											<?php echo $row['jenis_kelamin']; ?>
 										</td>
 										<td>
-											<?php echo $row['telepon']; ?>
+											<?php echo $row['tempat']; ?>
 										</td>
 										<td>
 											<?php echo $row['alamat']; ?>
-										</td>
+										</td>-->
 									</tr>
 									<?php
 										}
