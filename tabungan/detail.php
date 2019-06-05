@@ -11,6 +11,7 @@ $row = mysqli_fetch_array ($data);
 ?>
 			<p>
 				<a class="btn btn-success" href="tabungan.html">Kembali</a>
+				<button class="btn btn-info" onclick="window.print()">Print</button>
 			</p>
 			<table class="table">
 				<tr>
@@ -45,6 +46,9 @@ $row = mysqli_fetch_array ($data);
 							No
 						</th>
 						<th>
+							Tanggal
+						</th>
+						<th>
 							Setoran
 						</th>
 						<th>
@@ -69,6 +73,9 @@ $row = mysqli_fetch_array ($data);
 					<tr>
 						<td>
 							<?php echo $no ; ?>
+						</td>
+						<td>
+							<?php echo $rw['tanggal'] ; ?>
 						</td>
 						<td>
 							<?php if ($rw['setoran'] == '') {} else { echo format_rupiah($rw['setoran']) ;} ?>

@@ -31,6 +31,13 @@
 								<input type="text" id="nama" name="nama" class="form-control" placeholder="Nama Siswa" readonly>
 							</div>
 						</div>
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Tanggal</label>
+							
+							<div class="col-sm-9">
+								<input class="form-control" name="tanggal" type="date">
+							</div>
+						</div>
 						
 						<div class="form-group">
 							<label class="col-sm-3 control-label">Jumlah Penarikan</label>
@@ -78,7 +85,7 @@
 											$data = mysqli_query ($koneksi, " select  *
 																					  from 
 																					  siswa
-																					  order by id_siswa DESC");
+																					  order by id_siswa ASC");
 											while ($row = mysqli_fetch_array ($data))
 											{
 										?>

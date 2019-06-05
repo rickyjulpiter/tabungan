@@ -17,7 +17,7 @@
 
 							<div class="col-sm-9">
 								<div class="input-group">
-									<input type="text" class="form-control" id="id_siswa" name="id_siswa" placeholder="Nomor Id Siswa" readonly>
+									<input type="text" class="form-control" id="id_siswa" name="id_siswa" placeholder="Nomor Id Siswa" required="" readonly>
 									<span class="input-group-btn">
 									  <button type="button" class="btn btn-success btn-flat" data-toggle="modal" data-target="#modal">Browse</button>
 									</span>
@@ -28,7 +28,15 @@
 							<label class="col-sm-3 control-label">Nama Siswa</label>
 
 							<div class="col-sm-9">
-								<input type="text" id="nama" name="nama" class="form-control" placeholder="Nama Siswa" readonly>
+								<input type="text" id="nama" name="nama" class="form-control" placeholder="Nama Siswa" required="" readonly>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Tanggal</label>
+
+							<div class="col-sm-9">
+								<input class="form-control" name="tanggal" type="date" required="">
 							</div>
 						</div>
 						
@@ -36,7 +44,7 @@
 							<label class="col-sm-3 control-label">Jumlah Setoran</label>
 
 							<div class="col-sm-9">
-								<input name="setoran" type="text" class="form-control" placeholder="Masukkan Jumlah" onkeyup="convertToRupiah(this);">
+								<input name="setoran" type="text" class="form-control" placeholder="Masukkan Jumlah" onkeyup="convertToRupiah(this);" required="">
 							</div>
 						</div>
 					</div>

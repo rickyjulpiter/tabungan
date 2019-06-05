@@ -3,6 +3,7 @@ session_start();
 include"../koneksi.php";
 
 $id_siswa = $_POST['id_siswa'];
+$tanggal = $_POST['tanggal'];
 $setoran = reset_rupiah($_POST['setoran']);
 
 $data = mysqli_query ($koneksi, " select  penarikan,
@@ -18,6 +19,7 @@ $saldo = $row['jumlah_setoran'] - $row['jumlah_penarikan'] + $setoran;
 
 $query = "insert INTO tabungan SET
 								id_siswa = '$id_siswa',
+								tanggal = '$tanggal',
 								setoran = '$setoran',
 								saldo = '$saldo'
 								";
