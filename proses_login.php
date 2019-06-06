@@ -1,8 +1,20 @@
 <?php 
-$username=$_POST['username']; $password=$_POST['password']; if($username=="admin" && $password=="admin") { 
-echo header('location:tabungan.html');
- }
- else { 
-echo "<script>alert('Username atau Password salah!');history.go(-1);</script>";
- } 
+session_start();
+include"koneksi.php";
+include"fungsi.php";
+
+$data = mysqli_query ($koneksi, " select * from user where id = 1");
+$row = mysqli_fetch_array ($data);
+
+$namapengguna = $row['username'];
+$katasandi = $row['password'];
+
+$username=$_POST['username']; 
+$password=$_POST['password']; 
+if($username==$namapengguna && $password==$katasandi) { 
+	echo header('location:tabungan.html');
+}
+else { 
+	echo "<script>alert('Username atau Password salah!');history.go(-1);</script>";
+} 
 ?>

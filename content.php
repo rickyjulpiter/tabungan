@@ -52,4 +52,29 @@ elseif ($_GET[module]=='detail'){
 elseif ($_GET[module]=='cetak'){
 	include"cetak.php";
 }
+
+elseif ($_GET[module]=='pengguna'){
+	include"pengguna/index.php";
+}
+
+elseif ($_GET[module]=='form_pengguna')
+{
+	include"pengguna/form_tambah.php";
+}
+elseif ($_GET[module]=='input_pengguna'){
+	include"pengguna/input.php";
+}
+
+elseif ($_GET[module]=='edit_pengguna'){
+	include"pengguna/form_edit.php";
+}
+
+elseif ($_GET[module]=='update_pengguna'){
+	include"pengguna/update.php";
+}
+
+elseif ($_GET[module]=='hapus_pengguna'){
+	include"pengguna/hapus.php";
+}
+
 ?>
