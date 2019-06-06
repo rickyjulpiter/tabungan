@@ -1,4 +1,4 @@
-<h3>Detail Tabungan Siswa</h3>
+<h1 style="text-align: center">BUKU TABUNGAN SEKOLAH CONTOH</h1>
 <br>
 <?php	
 $data = mysqli_query ($koneksi, " select  *
@@ -9,10 +9,6 @@ $data = mysqli_query ($koneksi, " select  *
 										  id_siswa = $_GET[id]");
 $row = mysqli_fetch_array ($data);
 ?>
-			<p>
-				<a class="btn btn-success" href="tabungan.html">Kembali</a>
-				<a href="cetak-<?php echo $row['id_siswa'] ; ?>.html" class="btn btn-info">Cetak</a>
-			</p>
 			<table class="table">
 				<tr>
 					<td style="width:10%;">
@@ -92,4 +88,8 @@ $row = mysqli_fetch_array ($data);
 					$no++;
 						}
 					?>
-				</table>
+				</table> 
+
+				<script>
+					window.print();
+				</script>

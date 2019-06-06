@@ -15,4 +15,5 @@ RewriteRule ^input_penarikan\.html$ template.php?module=input_penarikan&id=$1 [L
 RewriteRule ^setoran\.html$ template.php?module=setoran&id=$1 [L]
 RewriteRule ^input_setoran\.html$ template.php?module=input_setoran&id=$1 [L]
 RewriteRule ^detail-(.*)\.html$ template.php?module=detail&id=$1 [L]
+RewriteRule ^cetak-(.*)\.html$ template.php?module=cetak&id=$1 [L]
 Options All -Indexes

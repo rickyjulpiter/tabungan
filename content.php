@@ -48,4 +48,8 @@ elseif ($_GET[module]=='input_setoran'){
 elseif ($_GET[module]=='detail'){
 	include"tabungan/detail.php";
 }
+
+elseif ($_GET[module]=='cetak'){
+	include"cetak.php";
+}
 ?>
