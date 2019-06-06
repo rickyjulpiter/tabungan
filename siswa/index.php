@@ -21,7 +21,8 @@
 							<th>Nama</th>
 							<th>Kelas</th>
 							<th>Jenis Kelamin</th>
-							<th>Tempat / Tanggal Lahir</th>
+							<th>Tempat Lahir</th>
+							<th>Tanggal Lahir</th>
 							<th>Alamat</th>
 							<th>Opsi</th>
 						</tr>
@@ -42,10 +43,11 @@
 							<td><?php echo $row['kelas']; ?></td>
 							<td><?php echo $row['jenis_kelamin']; ?></td>
 							<td><?php echo $row['tempat']; ?></td>
+							<td><?php echo date('d-m-Y', strtotime(($row['tanggal']))) ; ?></td>
 							<td><?php echo $row['alamat']; ?></td>
 							<td>
-								<button class="btn btn-success" href="edit_siswa-<?php echo $row['id_siswa']; ?>.html">Edit</button>
-								<button class="btn btn-danger" href="hapus_siswa-<?php echo $row['id_siswa']; ?>.html">Hapus</button>
+								<a class="btn btn-success" href="edit_siswa-<?php echo $row['id_siswa']; ?>.html">Edit</a>
+								<a class="btn btn-danger" href="hapus_siswa-<?php echo $row['id_siswa']; ?>.html">Hapus</a>
 							</td>
 						</tr>
 						<?php

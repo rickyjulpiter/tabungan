@@ -1,5 +1,5 @@
 <p>
-<h1>Edit Data Pengguna</h1>
+<h1>Edit Pengguna</h1>
 </p>
 <br>
 <?php

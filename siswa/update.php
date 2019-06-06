@@ -6,13 +6,15 @@ $kelas = $_POST['kelas'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $alamat = $_POST['alamat'];
 $tempat = $_POST['tempat'];
+$tanggal = $_POST['tanggal'];
 
 $query = "UPDATE siswa SET
 								nama = '$nama',
 								kelas = '$kelas',
 								jenis_kelamin = '$jenis_kelamin',
 								alamat = '$alamat',
-								tempat = '$tempat'
+								tempat = '$tempat',
+								tanggal = '$tanggal'
 								WHERE id_siswa = '$id'
 								";
 

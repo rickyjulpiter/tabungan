@@ -9,14 +9,14 @@
 			</div>
 	
 			<p>
-				<h1>Data Pengguna</h1>
+				<h1>Pengguna</h1>
 				<!--<a class="btn btn-primary pull-left" style="margin-bottom: 10px;" href="form_pengguna.html">Tambah</a>-->
 			</p>
 			<div class="table-responsive">
 				<table id="" class="table table-bordered table-striped">
 					<thead>
 						<tr>
-							<th>ID</th>
+							<!--<th>ID</th>-->
 							<th>Username</th>
 							<!--<th>Password</th>-->
 							<th>Opsi</th>
@@ -32,7 +32,7 @@
 							{
 						?>
 						<tr>
-							<td><?php echo $row['id']; ?></td>
+							<!--<td><?php echo $row['id']; ?></td>-->
 							<td><?php echo $row['username']; ?></td>
 							<!--<td><?php echo $row['password']; ?></td>-->
 							<td>

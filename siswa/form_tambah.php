@@ -29,8 +29,12 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label>Tempat / Tanggal Lahir</label>
+		<label>Tempat Lahir</label>
 		<input class="form-control" name="tempat">
+	</div>
+	<div class="form-group">
+		<label>Tempat Lahir</label>
+		<input class="form-control" name="tanggal" type="date">
 	</div>
 	<div class="form-group">
 		<label>Alamat</label>
