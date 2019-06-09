@@ -1,4 +1,9 @@
-<h1 style="text-align: center">BUKU TABUNGAN SEKOLAH CONTOH</h1>
+<center>
+	<a href="#" style="font-size: 30px;"><img src="assets/img/logo.jpeg" width="10%">    &nbsp Pendidikan Integral Hidayahtullah</a>
+	<hr>
+	<h4>Buku Tabungan Siswa</h4>
+</center>
+
 <br>
 <?php	
 $data = mysqli_query ($koneksi, " select  *
@@ -88,8 +93,15 @@ $row = mysqli_fetch_array ($data);
 					$no++;
 						}
 					?>
-				</table> 
+				</table>
+			<br><br>
+			<div class="pull-right">
+				<h5>Diketahui oleh</h5>
+				<h5>Kepala Sekolah</h5>
+				<br><br><br>
+				<h5>Herlina, S.Pd.</h5>
+			</div>
 
-				<script>
+				<!--<script>
 					window.print();
-				</script>
+				</script>-->

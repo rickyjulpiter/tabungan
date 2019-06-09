@@ -37,7 +37,7 @@
 							<!--<td><?php echo $row['password']; ?></td>-->
 							<td>
 								<a class="btn btn-success" href="edit_pengguna-<?php echo $row['id']; ?>.html">Edit</a>
-								<a class="btn btn-danger" href="hapus_pengguna-<?php echo $row['id']; ?>.html">Hapus</a>
+								<!--<a class="btn btn-danger" href="hapus_pengguna-<?php echo $row['id']; ?>.html">Hapus</a>-->
 							</td>
 						</tr>
 						<?php

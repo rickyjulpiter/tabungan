@@ -22,5 +22,5 @@
 		<input type="password" class="form-control" name="password" value="<?php echo $row['password'] ; ?>">
 	</div>
 	<button type="submit" class="btn btn-primary pull-right">Simpan</button> 
-	<a href="siswa.html" class="btn btn-success pull-right" style="margin-right:1%;">Batal</a>
+	<a href="pengguna.html" class="btn btn-success pull-right" style="margin-right:1%;">Batal</a>
 </form>

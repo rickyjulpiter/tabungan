@@ -33,7 +33,7 @@
 		<input class="form-control" name="tempat">
 	</div>
 	<div class="form-group">
-		<label>Tempat Lahir</label>
+		<label>Tanggal Lahir</label>
 		<input class="form-control" name="tanggal" type="date">
 	</div>
 	<div class="form-group">
