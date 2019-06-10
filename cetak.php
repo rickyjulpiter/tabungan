@@ -102,6 +102,6 @@ $row = mysqli_fetch_array ($data);
 				<h5>Herlina, S.Pd.</h5>
 			</div>
 
-				<!--<script>
+				<script>
 					window.print();
-				</script>-->
+				</script>
