@@ -46,8 +46,8 @@
 							<td><?php echo date('d-m-Y', strtotime(($row['tanggal']))) ; ?></td>
 							<td><?php echo $row['alamat']; ?></td>
 							<td>
-								<a class="btn btn-success" href="edit_siswa-<?php echo $row['id_siswa']; ?>.html">Edit</a>
-								<a class="btn btn-danger" href="hapus_siswa-<?php echo $row['id_siswa']; ?>.html">Hapus</a>
+								<a class="btn btn-success btn-xs" href="edit_siswa-<?php echo $row['id_siswa']; ?>.html">Edit</a>
+								<a class="btn btn-danger btn-xs" href="hapus_siswa-<?php echo $row['id_siswa']; ?>.html">Hapus</a>
 							</td>
 						</tr>
 						<?php

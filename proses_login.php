@@ -12,7 +12,7 @@ $katasandi = $row['password'];
 $username=$_POST['username']; 
 $password=$_POST['password']; 
 if($username==$namapengguna && $password==$katasandi) { 
-	echo header('location:siswa.html');
+	echo header('location:beranda.html');
 }
 else { 
 	echo "<script>alert('Username atau Password salah!');history.go(-1);</script>";

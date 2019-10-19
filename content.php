@@ -53,6 +53,10 @@ elseif ($_GET[module]=='cetak'){
 	include"cetak.php";
 }
 
+elseif ($_GET[module]=='beranda'){
+	include"beranda.php";
+}
+
 elseif ($_GET[module]=='pengguna'){
 	include"pengguna/index.php";
 }
