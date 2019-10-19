@@ -36,7 +36,7 @@
 																  siswa, tabungan
 																  where
 																  tabungan.id_siswa = siswa.id_siswa
-																  group by siswa.nama DESC");
+																  group by siswa.nama ASC");
 						while ($row = mysqli_fetch_array ($data))
 						{
 					?>

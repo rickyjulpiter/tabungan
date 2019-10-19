@@ -1,18 +1,13 @@
 <h3>Detail Tabungan Siswa</h3>
 <br>
 <?php	
-$data = mysqli_query ($koneksi, " select  *
-										  
-										  from 
-										  siswa
-										  where
-										  id_siswa = $_GET[id]");
+$data = mysqli_query ($koneksi, " select  * from siswa where id_siswa = $_GET[id]");
 $row = mysqli_fetch_array ($data);
 ?>
-			<p>
-				<a class="btn btn-success" href="tabungan.html">Kembali</a>
-				<a href="cetak-<?php echo $row['id_siswa'] ; ?>.html" class="btn btn-info">Cetak</a>
-			</p>
+<p>
+	<a class="btn btn-success" href="tabungan.html">Kembali</a>
+	<a href="cetak-<?php echo $row['id_siswa'] ; ?>.html" class="btn btn-info">Cetak</a>
+</p>
 			<table class="table">
 				<tr>
 					<td style="width:10%;">
